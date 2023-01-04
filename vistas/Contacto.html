@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empieza</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <a  href="./index.html">
+            <img class="header__logo" src="../img/LOGO.png"Logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__contenedor">
+                
+                <li class="header__lista">
+                    <a class="header__link" href="../index.html">Inicio</a>
+                </li>
+
+                <li class="header__lista">
+                    <a class="header__link" href="./Plantilla.html">Plantillas</a>
+                </li>
+
+                <li class="header__lista">
+                    <a class="header__link" href="./Tarifas.html">Tarifas</a>
+                </li>
+
+                <li class="header__lista">
+                    <a class="header__link" href="./Preguntas Frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+
+                <li class="header__lista">
+                    <a class="header__link" href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form class="form" action="#" method="GET" enctype="multipart/form-data">
+        <fieldset class="form_fondo">
+            <legend><strong>FORMULARIO</strong></legend>
+
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            <div>
+
+            </div>
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            <div>
+                <label for="date">Fecha de Nacimiento</label>
+                <input type="date" name="date" id="date" min="1950-01-01">
+            </div>
+
+            <div>
+                <strong>Fruta Favorita</strong>
+
+            </div>
+
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="apple">Manzana</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+            <div>
+                <div>
+                    <strong>Genero</strong>
+                </div>
+
+                <div>
+                    <label for="male">Masculino</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                    
+                <div>
+                    <label for="female">Femenino</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </div>
+            
+            <div>
+                <label for="eyeColor">Color de Ojos</label>
+                <select name="eyeColor" id="eyeColor" multiple>
+                    <option value="Green" label="Verde"></option>
+                    <option value="Red" label="Rojo"></option> </option>
+                </select>
+            </div>
+            <div></div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
