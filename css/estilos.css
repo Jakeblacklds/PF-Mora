@@ -4,56 +4,26 @@
     box-sizing: border-box;
 }
 /***Menu header****/
-.header{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color:#284B63; 
-    
 
-}
+.bg-darkblue{
+    background: linear-gradient(to left,#284B63, skyblue);
 
-.header__nav{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding :1rem;
-    
 }
 
 .header__logo{
     width: 150px;
     height: 150px;
-
+    margin: 1rem;
 }
 
-
-.header__contenedor{
-    font-size: larger;
-    list-style: none;
-    display: flex;
-    
+.nav-link{
+    font-size: 23px !important;
+    color: white  !important;
 }
 
-.header__lista{
-    
-    padding: 2rem;
-    justify-content: space-between;
-}
-
-
-
-.header__link{
-
-    font-size: 25px;
-    transition: all .5s;
-    
-    text-decoration: none;
-    
-    color: white;
-    
-}
-
-.header__link:hover {
-    font-size: 30px;  /* Tamaño final del texto al pasar el cursor */
+.nav-link:hover {
+    color: darkblue!important;
+    transition: border-left-color 0.3s ease-in-out;
 }
 
 
@@ -65,43 +35,7 @@
     height: 1000px;
 }
 
-.principal__portada--titulo{
-    padding: 3rem;
-    color: white;
-}
-.principal__cont{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding: rem;
-    margin: auto;
-    
-}
 
-.principal__cont--img{
-    grid-row: 1;
-    grid-column: 1;
-    width: 40rem;
-    height: 40rem;
-    padding: 1rem;
-    margin: 2rem;
-    
-}
-
-.principal__cont--par{
-    grid-row: 1;
-    grid-column: 2;
-    padding: 10rem;
-}
-
-.principal__cont--boton{
-    grid-row: 2;
-    grid-column: 1 / span 2;
-    justify-self: center;
-    width: 200px;
-    height: 40px;
-    
-}
 
 .content{
     background-color: #284B63;
@@ -276,36 +210,14 @@
 
 
 @media screen and (max-width: 770px) {
-    .header{
-        flex-direction: column;
-        padding: 3rem;
-    }
 
-    .header__contenedor{
-        flex-direction: row;
-        text-align: justify;
-    } 
-
-    .principal__cont--img{
-        width: 10rem;
-        height: 10rem;
-        padding: 1rem;
-        margin: 2rem;
-        
-    }
 }
 
 /*MEDIA QUERIES (estilos para movil)*/
 
 @media screen and (max-width: 769px) {
-    .header{
-        flex-direction: column;
-        padding: 1rem;
 
-    }
-    .header__contenedor{
-        flex-direction: column;
-    }
+
     .principal{
         height: 100%;
     }
