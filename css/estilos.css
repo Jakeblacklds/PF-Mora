@@ -16,12 +16,12 @@
     margin: 1rem;
 }
 
-.nav-link{
+.header__link{
     font-size: 23px !important;
     color: white  !important;
 }
 
-.nav-link:hover {
+.header__link:hover {
     color: darkblue!important;
     transition: border-left-color 0.3s ease-in-out;
 }
