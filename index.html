@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INDEX</title>
+<title>QuickCV</title>
 <link rel="stylesheet" href="./css/estilos.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -22,19 +24,19 @@
             <div class=" collapse navbar-collapse d-lg-flex justify-content-end"  id="navbarNav">
                 <ul class="navbar-nav ">
 
-                <li class="nav-item mx-5 ">
+                <li class="nav-item  ">
                     <a class="nav-link header__link " aria-current="page" href="./index.html">Inicio</a>
                 </li>
-                <li class="nav-item mx-5 ">
+                <li class="nav-item ">
                     <a class="nav-link header__link " href="./vistas/Plantilla.html">Plantillas</a>
                 </li>
-                <li class="nav-item mx-5 ">
+                <li class="nav-item ">
                     <a class="nav-link header__link " href="./vistas/Tarifas.html">Tarifas</a>
                 </li>
-                <li class="nav-item mx-5 ">
+                <li class="nav-item ">
                     <a class="nav-link header__link" href="./vistas/Preguntas Frecuentes.html" >Preguntas</a>
                 </li>
-                <li class="nav-item mx-5 ">
+                <li class="nav-item  ">
                     <a class="nav-link  header__link" href="./vistas/Contacto.html">Contacto</a>
                 </li>
             </ul>
@@ -45,10 +47,10 @@
 
 
     <main>
-        <section class="container">
-            <h1 class="text-center">Curriculums con Inteligencia Artificial</h1>
-            <div class="row"> 
-                <img class="col-lg-6" src="./img/CV1.jpg" alt="Img CV">
+        <section class="container " data-aos="fade-down">
+            <h1 class="text-center"  >Curriculums con Inteligencia Artificial</h1>
+            <div class="row" > 
+                <img class="col-lg-6" src="./img/CV1.jpg" alt="Img CV" >
                 <div class="col-lg-6 d-flex flex-wrap align-items-center justify-content-center">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium magnam ullam eius sit illum, esse deleniti molestiae suscipit laudazntium hic? Quia optio reiciendis modi iusto, inventore cum illum amet!</p>
                     <button class="btn btn-primary">Empieza</button>
@@ -58,10 +60,10 @@
         
         
 
-        <section class="content">
-            <div class="content__divid">
+        <section class="content" >
+            <div class="content__divid" data-aos="fade-down">
                 <img class="content__divid--img" src="./img/Content.jpg" alt="Img de Contenido">
-                <p class="content__divid--item">
+                <p class="content__divid--item" >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus repellendus, ducimus illo dignissimos explicabo dolorum autem odio animi        necessitatibus!
                 </p>
             </div>
@@ -69,17 +71,17 @@
         
     
         <section class="seccion">
-            <div class="seccion__content"  >
-                <img class="seccion__content--image" src="./img/Numero1.png" alt="Numero 1">
-                <p class="seccion__content--parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consequuntur.</p>
+            <div class="seccion__content" data-aos="fade-down" >
+                <img class="seccion__content--image "  src="./img/Numero1.png" alt="Numero 1">
+                <p class="seccion__content--parrafo" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consequuntur.</p>
             </div>
-            <div class="seccion__content">
-                <img class="seccion__content--image" src="./img/2NumberTwoInCircle.png" alt="Numero 2">
-                <p class="seccion__content--parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consequuntur.</p>
+            <div class="seccion__content" data-aos="fade-down">
+                <img class="seccion__content--image"  src="./img/2NumberTwoInCircle.png" alt="Numero 2">
+                <p class="seccion__content--parrafo" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consequuntur.</p>
             </div>
-            <div class="seccion__content">
-                <img class="seccion__content--image" src="./img/Eo_circle_blue_white_number-3.svg.png" alt="Numero 3">
-                <p class="seccion__content--parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consequuntur.</p>
+            <div class="seccion__content" data-aos="fade-down">
+                <img class="seccion__content--image"  src="./img/Eo_circle_blue_white_number-3.svg.png" alt="Numero 3">
+                <p class="seccion__content--parrafo" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consequuntur.</p>
             </div>
         </section>
     
@@ -89,6 +91,14 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init(
+            {
+                duration: 2000,
+            }
+        );
+    </script>
 </body>
 
 </html>

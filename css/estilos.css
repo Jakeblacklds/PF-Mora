@@ -6,36 +6,22 @@
 /***Menu header****/
 
 .bg-darkblue{
-    background: linear-gradient(to left,#284B63, skyblue);
+    background-color: #284B63;
 
 }
 
 .header__logo{
-    width: 150px;
-    height: 150px;
-    margin: 1rem;
+    width: 100px;
 }
 
 .header__link{
-    font-size: 23px !important;
     color: white  !important;
 }
 
 .header__link:hover {
-    color: darkblue!important;
+    color: gray!important;
     transition: border-left-color 0.3s ease-in-out;
 }
-
-
-.principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFFFFF;
-    height: 1000px;
-}
-
-
 
 .content{
     background-color: #284B63;
@@ -62,8 +48,7 @@
 }
 
 .seccion{
-    padding: 10rem;
-    width: auto;
+    
     display: flex;
     flex-direction: row;
     background-color: #D9D9D9;
@@ -78,8 +63,13 @@
 
 .seccion__content--image{
         margin: 3rem;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
+}
+
+.seccion__content--parrafo{
+    text-align: center;
+    margin: 0;
 }
 
 
@@ -88,41 +78,54 @@
     display: flex;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
-    align-items: center;
+
+    justify-content: space-around
 }
 
-.suscrip__free{
-    background-image: linear-gradient( #FFFFFF 0%, #F1F7F8 100%);
 
+.suscrip__cont{
     text-align: center;
+    color: white;
+    background-color: #284B63;
     padding: 3rem;
-    width: 80rem;
-    height: 13rem;
-    
 
-}
-
-.suscrip__premium{
-    text-align: center;
-    background-image: linear-gradient( #FFFFFF 0%, #F1F7F8 100%);
-    
     margin: 1rem;
-    padding: 3rem;
-    width: 80rem;
-    height: 13rem;
-    
 }
+
+
+.suscrip__titulo{
+    border-radius: 25px 100px;
+    color: azure;
+    background-color: #011D27;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.suscrip__cont:hover{
+
+    background-color: #011D27;
+    transition: all 0.5s ease;
+}
+.suscrip__titulo:hover{
+    background-color: #284B63;
+    transition: all 0.5s ease;
+}
+
+.magicbutton {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
 
 .pie{
     color: white;
     text-align: center;
     background-color: #011D27;
     height: 200px;
-        
-}
+    padding: 2rem;}
 
 .qa{ 
-    height: 500px;
     background-color:#284B63; ;
     color: white;
 
@@ -180,15 +183,25 @@
 }
 
 .template__cell{
-    background-image: linear-gradient( #FFFFFF 0%, #F1F7F8 100%);
+    color: white;
+    border-radius: 2.5rem ;
+    background-image: linear-gradient( #FFFFFF 60%, #284B63 60%);
     text-align: center;
     padding: 1rem;
     margin: 1rem;
+
 }
 
+.template__cell:hover{
+    transition: all .5s ease;
+    box-shadow: 10px 10px 20px #888888;
+
+}
+
+
 .template__img{
-    margin: 1rem;
-    width: 70%;
+    width: 90%;
+    margin-bottom: 2rem;
 }
 
 .form{
@@ -209,59 +222,7 @@
 
 
 
-@media screen and (max-width: 770px) {
-
-}
-
-/*MEDIA QUERIES (estilos para movil)*/
-
 @media screen and (max-width: 769px) {
-
-
-    .principal{
-        height: 100%;
-    }
-
-    .principal__portada--titulo{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .principal__cont{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        margin: auto;
-    }
-
-    .principal__cont--img{
-        
-        grid-row: 1;
-        grid-column: 1;
-        justify-self: center;
-        width: 200px;
-        height: 200px;
-        
-    }
-
-    .principal__cont--par{
-        grid-row: 2;
-        grid-column: 1;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .principal__cont--boton{
-        grid-row: 3;
-        grid-column: 1;
-        justify-self: center;
-        width: 200px;
-        height: 40px;
-    }
-
-
-
 
     .content__divid{
         display: flex;
@@ -270,17 +231,13 @@
     }
 
     .content__divid--img{
-        margin: 1rem;
+        margin: 0rem;
         width: 200px;
     }
 
-    .content__item{
-        margin-top: 1rem; 
-    }
 
     .seccion{
         padding: 0rem;
-        margin: 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -295,10 +252,14 @@
 
     .seccion__content--image{
             margin: 0rem;
-            width: 100px;
-            height: 100px;
+            width: 60px;
+            height: 60px;
     }
 
+    .seccion__content--parrafo{
+        text-align: center;
+        margin: 0;
+    }
     .suscrip{
         display: flex;
         flex-direction: column;
@@ -306,7 +267,6 @@
         align-items: center;
 
     }
-    /*make .suscrip__free and .suscrip__premium responsive*/
     
     .suscrip__free{
         padding: 3rem;
@@ -343,11 +303,13 @@
         padding: 1rem;
     }
 
+
     .template__img{
+        padding: 4px;
         margin: 0rem;
         width: 100%;
-
     }
+
     .qa{
         height: 100%;
         margin: 0rem;
@@ -360,4 +322,3 @@
         align-items: center;
     }
 }
-
