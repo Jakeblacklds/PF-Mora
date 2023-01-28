@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, formulario de contacto, soporte técnico">
+    <meta name="description" content="Página de contacto para hacer preguntas, reportar problemas o solicitar soporte técnico. También incluye una sección de preguntas frecuentes para resolver dudas comunes.">
     <title>Empieza</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <link rel="stylesheet" href="../css/compilado.css">
+    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 </head>
 <body>
     <header >
-        <nav class="navbar navbar-expand-lg navbar-light bg-darkblue ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-darkblue  ">
             <div class="container-fluid ">
                 <a class="navbar-brand"  href="../index.html">
                     <img class="header__logo" src="../img/LOGO.png"">
@@ -21,86 +25,86 @@
                 </button>
                 <div class=" collapse navbar-collapse d-lg-flex justify-content-end"  id="navbarNav">
                     <ul class="navbar-nav">
-        
-                        <li class="nav-item ">
-                            <a class="nav-link  header__link" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item d-flex align-items-center">
+                            <img class="header__icon"  src="../img/Home.png" alt="Inicio">
+                            <a class="nav-link header__link fs-4" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link header__link" href="./Plantilla.html">Plantillas</a>
+                        <li class="nav-item d-flex align-items-center">
+                            <img class="header__icon" src="../img/Paper.png" alt="Plantillas">
+                            <a class="nav-link header__link fs-4" href="./Plantilla.html">Plantillas</a>
                         </li>
-                        <li class="nav-item  ">
-                            <a class="nav-link header__link" href="./Tarifas.html">Tarifas</a>
+                        <li class="nav-item d-flex align-items-center">
+                            <img class="header__icon" src="../img/Tarifa.png" alt="Tarifas">
+                            <a class="nav-link header__link fs-4" href="./Tarifas.html">Tarifas</a>
                         </li>
-                        <li class="nav-item  ">
-                            <a class="nav-link header__link" href="./Preguntas Frecuentes.html" >Preguntas</a>
+                        <li class="nav-item d-flex align-items-center">
+                            <img class="header__icon" src="../img/Pregunta.png" alt="Preguntas">
+                            <a class="nav-link header__link fs-4" href="./Preguntas Frecuentes.html">Preguntas</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link header__link  " href="./Contacto.html">Contacto</a>
+                        <li class="nav-item d-flex align-items-center">
+                            <img class="header__icon" src="../img/Contacto.png" alt="Contacto">
+                            <a class="nav-link header__link fs-4" href="./Contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    
                 </div>
+    
             </div>
         </nav>
-    </header>
+    </header >
+
+
+    <main class="secon">
     <form class="form" action="#" method="GET" enctype="multipart/form-data">
         <fieldset class="form_fondo">
             <legend><strong>FORMULARIO</strong></legend>
 
             <div>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required>
+                <label class="form__label" for="name">Nombre</label>
+                <input class="form__input" type="text" name="name" id="name" required>
             </div>
-                <label for="email">Email</label>
+                <label class="form__label" for="email">Email</label>
                 <input type="email" name="email" id="email" required>
             <div>
 
             </div>
-                <label for="age">Edad</label>
+                <label class="form__label" for="age">Edad</label>
                 <input type="number" name="age" id="age" min="1" max="200" step="5">
             <div>
-                <label for="date">Fecha de Nacimiento</label>
-                <input type="date" name="date" id="date" min="1950-01-01">
+                <label class="form__label" for="date">Fecha de Nacimiento</label>
+                <input class="form__label" type="date" name="date" id="date" min="1950-01-01">
             </div>
 
             <div>
-                <strong>Fruta Favorita</strong>
 
-            </div>
-
-            <div>
-                <label for="banana">Banana</label>
-                <input type="checkbox" name="banana" id="banana">
-            </div>
-            <div>
-                <label for="apple">Manzana</label>
-                <input type="checkbox" name="apple" id="apple">
-            </div>
-            <div>
                 <div>
                     <strong>Genero</strong>
                 </div>
 
                 <div>
-                    <label for="male">Masculino</label>
-                    <input type="radio" name="gender" id="male" value="male">
+                    <label class="form__label" for="male">Masculino</label>
+                    <input  type="radio" name="gender" id="male" value="male">
                 </div>
                     
                 <div>
-                    <label for="female">Femenino</label>
+                    <label class="form__label" for="female">Femenino</label>
                     <input type="radio" name="gender" id="female" value="female">
                 </div>
             </div>
-            
-            <div>
-                <label for="eyeColor">Color de Ojos</label>
-                <select name="eyeColor" id="eyeColor" multiple>
-                    <option value="Green" label="Verde"></option>
-                    <option value="Red" label="Rojo"></option> </option>
-                </select>
-            </div>
-            <div></div>
-        </fieldset>
+
+            <fi>
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        
+        <div>
+            <input class="form__button" type="submit" value="Enviar">
     </form>
+    </fieldset>
+    <div class="conten">
+    <iframe class="conten__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30083.79525328815!2d-99.1692825360042!3d19.521235965818917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d203aff8e2cedb%3A0x1e3da53833f8555f!2sCampos%20de%20f%C3%BAtbol!5e0!3m2!1ses-419!2smx!4v1674498826355!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+    </main>
     <footer class="pie">
         <p>Redes sociales Copyright 2022 </p>
     </footer>

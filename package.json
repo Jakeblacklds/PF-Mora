@@ -1,0 +1,22 @@
+{
+  "name": "dev_web",
+  "version": "1.0.0",
+  "description": "This is a web application that allows you to create a professional CV using the power of OpenAI's GPT-3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakeblacklds/QuickCV.git"
+  },
+  "author": "Jacob Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakeblacklds/QuickCV/issues"
+  },
+  "homepage": "https://github.com/Jakeblacklds/QuickCV#readme"
+}

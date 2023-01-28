@@ -1,0 +1,24 @@
+.seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $white;
+    
+    &__content{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem;
+        
+    &--image{
+        margin: 3rem;
+        width: 60px;
+        height: 60px;
+    }
+    &--parrafo{
+        text-align: center;
+        margin: 1;
+    }
+    }
+    }

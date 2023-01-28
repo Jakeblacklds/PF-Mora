@@ -1,0 +1,36 @@
+.template{
+    padding: 4rem;
+
+    &__titulo{ 
+        text-align: center;
+    }
+
+    &__fondo{
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__cell{
+            color: white;
+            border-radius: 2rem ;
+            background-image: linear-gradient(#FFFFFF 30%, #284B63 20%);
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem;
+
+    &:hover{
+            transition: all .2s ease;
+            box-shadow: 10px 10px 20px #888888;
+            }
+        }
+    
+
+    &__img{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+

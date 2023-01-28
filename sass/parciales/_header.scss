@@ -1,0 +1,28 @@
+.bg-darkblue{
+background-color: $darkblue;
+}
+
+.header{
+&__logo{
+width: 100px;
+}
+
+&__link{
+    color: white  !important;
+
+    &:hover {
+        color: gray!important;
+        transition: border-left-color 0.3s ease-in-out;
+    }
+}
+&__icon{
+    transition: all 0.5s ease-in-out;
+    width: 30px;
+    
+    &:hover{
+        filter: brightness(200%);
+
+    }
+}
+}
+

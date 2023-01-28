@@ -1,0 +1,22 @@
+.content{
+    background-color: $darkblue;
+    &__divid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+        margin-inline: 20%;
+        border-color: $brown;
+    &--img{
+       
+        margin: 2rem;
+        width: 500px;
+    }
+    &--item{
+        flex: 1;
+        color: white;
+        margin-top: 3rem;
+    }
+    }
+    }
+
