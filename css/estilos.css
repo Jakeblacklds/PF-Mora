@@ -301,6 +301,10 @@
         text-align: center;
         margin: 0;
     }
+    .sus{
+        background-image: ;
+        margin: 0;
+    }
     .suscrip{
         display: flex;
         flex-direction: column;
@@ -322,7 +326,7 @@
         height: 300px;
         text-align: center;
     }
-
+    
     .suscrip__titulo {
         font-size: medium;
     }

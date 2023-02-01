@@ -1,8 +1,11 @@
 .template{
-    padding: 4rem;
-
+    
     &__titulo{ 
+        background-color: $darkblue;
+        color: $white;
         text-align: center;
+        padding: 3rem;
+
     }
 
     &__fondo{
