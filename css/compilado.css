@@ -244,10 +244,18 @@
   height: 200px;
   padding: 2rem; }
 
+.pie__menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 1rem;
+  grid-gap: 30px;
+  padding: 0; }
+
 .pie__icon {
-  width: 40px; }
+  width: 45px; }
 
 .pie__link {
+  margin-right: 1rem;
   list-style: none; }
 
 .pie__a {
@@ -352,7 +360,16 @@
     margin: 0; }
   .small-t {
     font-size: 15px;
-    color: #8B417E; } }
+    color: #8B417E; }
+  .pie__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-gap: 0px; }
+  .pie__icon {
+    margin: 0rem;
+    width: 30px; } }
 
 @media screen and (min-width: 767px) and (max-width: 1025px) {
   .template {

@@ -5,17 +5,32 @@
     background-color: $blackblue;
     height: 200px;
     padding: 2rem;
-}
-
-.pie__icon{
-    width: 40px;
-}
-
-.pie__link{
+    }
+    
+    .pie__menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1rem;
+    grid-gap: 30px;
+    padding: 0;
+    }
+    
+    .pie__icon {
+    width: 45px;
+    }
+    
+    .pie__link {
+    margin-right: 1rem;
     list-style: none;
-}
-
-.pie__a{
+    }
+    
+    .pie__a {
     color: $white;
     text-decoration: none;
-}
+    }
+    
+    
+    
+    
+    
+
