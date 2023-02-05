@@ -3,6 +3,9 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__icon{
+        margin-right: 2rem;
+    }
 
     .content__divid{
         display: flex;
@@ -11,6 +14,9 @@
         margin-inline: 0rem;
     }
 
+    .content__divid--item{
+        font-size: 15px;
+    }
     .content__divid--img{
         margin: 0rem;
         width: 200px;
@@ -50,30 +56,36 @@
         margin-inline: 0%;
 
     }
-    .suscrip__cont{
-        width: 230px;
-        font-size: 15px;
-    }
+
 
     .suscrip__lista{
         padding: 1rem;
-    }
-
-    .suscrip__free{
-        padding: 3rem;
-        width: 100%;
-        text-align: center;
-        height: 300px;
         
     }
 
     .suscrip__titulo {
-        font-size: medium;
+        font-size: 40px;
+    }
+
+    .suscrip__tabla{
+        width: 280px;
+        box-shadow: none;
     }
 
     .suscrip__tabla--img{
         width: 35px;
     }
+
+
+
+    
+    .suscrip__box{
+        
+        width: 85%;
+        margin-left: 20px;
+        
+    }
+
 
     .fotsec{
         display: flex;
@@ -124,12 +136,28 @@
         margin-bottom: 1rem;}
 
     .qa__caja{
+        
+        margin-inline: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
     .qa__p1{
+        font-size: 17px;
+        text-align: left;
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .qa__p2{
+        font-size: 17px;
+        text-align: left;
+        padding: 0;
+        margin: 1rem;
+    }
+    .qa__p3{
+        font-size: 17px;
         text-align: left;
         padding: 0;
         margin: 1rem;
@@ -191,29 +219,54 @@
                 border-radius: 1.5rem ;
             }
     }
+    .content{
+        background-color: $darkblue;
+        &__divid{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            margin-inline: 1%;
+            border-color: $brown;
+            &--img{
+       
+                margin: 2rem;
+                width: 250px;
+            }
+        }
+        }
 
     .suscrip{
     
-
+        &__box{
+            width: 80%;
+            margin-left: 60px;
+        }
     
         &__titulo{
-            font-size: 20px;
-            color: $azure;
-            background-color: $dark;
+            font-size: 40px;
+            margin-left: 40px;
             
-            margin-bottom: 2rem;
+
         &:hover{
             
             transition: all 0.5s ease;
             }
         }
-    
-        &__button {
-            top: 90%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+
+
+
+
+        &__tabla{
+            width: 400px;
+
+            &--img{
+                width: 35px;
+            }
         }
     }
+
+
     
 }
 

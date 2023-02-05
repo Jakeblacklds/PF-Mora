@@ -1,77 +1,103 @@
-.sus{
-    background-color: $darkblue ;
+.sus {
+    background-color: $darkblue;
     color: $white;
     margin: 0;
+
+    &__h {
+        font-size: 40px;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    &__p {
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    }
+
+
+
+.suscrip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
-}
-.sus__h{
-    font-size: 40px;
-    padding: 3rem;
-    text-align: center;
-}
-.sus__p{
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 3rem;
-}
-.suscrip__tabla{
+    justify-items: center;
+    margin: 4rem;
+    margin-inline: 5%;
+
+
+    &__tabla {
     background-color: $white;
-    border-radius: 1rem ;
-    box-shadow: 10px 10px 20px #888888;
-    
+    border-radius: 1rem;
+    box-shadow: 10px 10px 4px 0 $blackblue;
     width: 800px;
     height: 600px;
-}
 
-.suscrip__tabla--img{
+    &--img {
     width: 50px;
-}
+        }
 
-.suscrip__tabla--colp{
+    &--colp {
     width: 300px;
     font-size: 20px;
-    
-}
+        }
 
-.suscrip__tabla--cols{
-    
-    width: 50px;
+    &--cols {
+    width: 0px;
+        }
+    }
 
-}
-.suscrip{
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
-    justify-content: space-around;
-    margin: 5%;
-    
 
     &__cont{
         
         text-align: center;
-        color: $dark;
-        border-radius: 1rem ;
-        background-color: $white;
         margin: 1rem;
         font-size: 25px;
-        box-shadow: 10px 10px 20px #888888;
         
-    &:hover{
-        color: $white;
-        background-color: $dark;
-        transition: all 0.5s ease;
-    }
+        
+
     }
     &__lista{
+        
         list-style: none;
         padding: 0;
+
+        &--p{
+            font-size: 20px;
+            color: gray;
+        }
+    }
+
+    &__cont2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    &__box{
+        width: 400px;
+        margin: 1rem;
+        background-color: $white;
+        border-style: solid;
+        border-width: 2px 2px 0.125rem;
+        border-color: #000;
+        border-radius: 1rem ;
+        box-shadow: 8px 8px 0px 0 $blackblue;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+
+            transition: all 0.2s ease-in-out;
+            box-shadow: none;
+        }
     }
     &__titulo{
         border-radius: 1rem ;
         padding: 2rem;
-        color: $azure;
-        background-color: $dark;
-        font-size: 2.5rem;
+        color: $blackblue;
+        
+        font-size: 40px;
         
     &:hover{
         
@@ -79,11 +105,11 @@
         }
     }
 
-    &__button {
-        top: 92%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    &__a{
+        text-decoration: none;
+        color: inherit;
     }
+
 }
 
 .small-t{
@@ -93,10 +119,7 @@
 
 }
 
-.suscrip__lista--p{
-    font-size: 20px;
-    color: #8B8B92;
-}
+
 
 .fotsec{
     display: flex;
@@ -110,3 +133,4 @@
 }
 
 }
+

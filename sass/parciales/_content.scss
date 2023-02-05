@@ -5,7 +5,7 @@
         justify-content: space-around;
         align-items: center;
         padding: 3rem;
-        margin-inline: 20%;
+        margin-inline: 15%;
         border-color: $brown;
     &--img{
        
@@ -15,6 +15,7 @@
     &--item{
         flex: 1;
         color: white;
+        font-size: 20px;
         margin-top: 3rem;
     }
     }
